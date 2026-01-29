@@ -90,6 +90,30 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4.  Push to the branch (`git push origin feature/AmazingFeature`)
 5.  Open a Pull Request
 
+## Example YML
+
+```yml
+# Path to interpreter/command and arguments
+command: python3
+args:
+  - "/files/scripts/test.py"
+
+# Graphics engine draws script output on top of video
+# z_index controls stacking order: higher numbers are drawn last (on top)
+z_index: 300
+
+# When to start showing this element (in seconds from content start)
+start_seconds: 0
+
+# How long to keep it on screen (e.g., 30 seconds)
+duration_seconds: 30
+
+# Data output format
+# 'raw' means full BGRA frames from stdout
+# 'packet' means ETV graphics packets from stdout
+format: raw
+```
+
 ## 👤 Author
 
 **Bluchip Studio**
